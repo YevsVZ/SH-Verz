@@ -3,6 +3,7 @@
 <head>
   <title>Verzauberungen</title>
 </head>
+
 <style>
 
 
@@ -53,7 +54,7 @@ img {
 <body>
 
 <button name="spoiler-button" id="spoiler-button" type="button">Blau</button>
-	<div id="spoiler-content" class="Blau">
+	<div id="spoiler-Blau" class="hidden">
 		<p><a href="https://www.wowdb.com/items/112165-enchant-weapon-mark-of-the-frostwolf">112165</a><br></p><img src="Blau/112165.gif" >
 		<p><a href="https://www.wowdb.com/items/168593-enchant-weapon-machinists-brilliance">168593</a><br></p><img src="Blau/168593.gif" >
 		<p><a href="https://www.wowdb.com/items/38772-enchant-2h-weapon-minor-impact">38772</a><br></p><img src="Blau/38772.gif" >  
@@ -77,7 +78,7 @@ img {
 		<p><a href="https://www.wowdb.com/items/74728-enchant-weapon-rivers-song">74728</a><br></p><img src="Blau/74728.gif">>
 	</div>
 <button name="spoiler-button" id="spoiler-button" type="button">Gelb</button>
-	<div id="spoiler-content" class="Gelb">
+	<div id="spoiler-Gelb" class="hidden">
 		<p><a href="https://www.wowdb.com/items/38781-enchant-2h-weapon-lesser-intellect">38781</a><br></p><img src="Gelb/38781.gif" >
 		<p><a href="https://www.wowdb.com/items/38874-enchant-2h-weapon-major-versatility">38874</a><br></p><img src="Gelb/38874.gif" >
 		<p><a href="https://www.wowdb.com/items/38875-enchant-2h-weapon-major-intellect">38875</a><br></p><img src="Gelb/38875.gif">
@@ -92,7 +93,7 @@ img {
 
 
 <button name="spoiler-button" id="spoiler-button" type="button">Lila</button>
-	<div id="spoiler-content" class="Lila">
+	<div id="spoiler-Lila" class="hidden">
 		<p><a href="https://www.wowdb.com/items/112115-enchant-weapon-mark-of-shadowmoon">112115</a><br></p><img src="Lila/112115.gif">
 		<p><a href="https://www.wowdb.com/items/112160-enchant-weapon-mark-of-blackrock">112160</a><br></p><img src="Lila/112160.gif">
 		<p><a href="https://www.wowdb.com/items/115973-enchant-weapon-glory-of-the-thunderlord">115973</a><br></p><img src="Lila/115973.gif">
@@ -107,7 +108,7 @@ img {
 	</div>
 
 <button name="spoiler-button" id="spoiler-button" type="button">Orange</button>
-	<div id="spoiler-content" class="Orange">
+	<div id="spoiler-Orange" class="hidden">
 	
 		<p><a href="https://www.wowdb.com/items/112093-enchant-weapon-mark-of-the-shattered-hand">112093</a><br></p><img src="Orange/112093.gif">
 		<p><a href="https://www.wowdb.com/items/112164-enchant-weapon-mark-of-warsong">112164</a><br></p><img src="Orange/112164.gif">
@@ -125,7 +126,7 @@ img {
 
 
 <button name="spoiler-button" id="spoiler-button" type="button">Rot</button>
-	<div id="spoiler-content" class="Rot">
+	<div id="spoiler-Rot" class="hidden">
 		<p><a href="https://www.wowdb.com/items/38779-enchant-weapon-minor-beastslayer">38779</a><br></p><img src="Rot/38779.gif">
 		<p><a href="https://www.wowdb.com/items/38780-enchant-weapon-minor-striking">38780</a><br></p><img src="Rot/38780.gif">
 		<p><a href="https://www.wowdb.com/items/38813-enchant-weapon-lesser-beastslayer">38813</a><br></p><img src="Rot/38813.gif">
@@ -142,7 +143,7 @@ img {
 	</div>
 
 <button name="spoiler-button" id="spoiler-button" type="button">Weisz</button>
-	<div id="spoiler-content" class="Weisz">
+	<div id="spoiler-Weisz" class="hidden">
 
 		<p><a href="https://www.wowdb.com/items/38788-enchant-2h-weapon-lesser-versatility">38788</a><br></p><img src="Weisz/38788.gif">
 		<p><a href="https://www.wowdb.com/items/38868-enchant-weapon-icy-chill">38868</a><br></p><img src="Weisz/38868.gif">
@@ -162,7 +163,7 @@ img {
 	</div>
 
 <button name="spoiler-button" id="spoiler-button" type="button">Gruen</button>
-	<div id="spoiler-content" class="Gruen">
+	<div id="spoiler-Gruen" class="hidden">
 
 		<p><a href="https://www.wowdb.com/items/68134-enchant-2h-weapon-mighty-agility">68134</a><br></p><img src="Gruen/68134.gif">
 		<p><a href="https://www.wowdb.com/items/38922-enchant-2h-weapon-major-agility">38922</a><br></p><img src="Gruen/38922.gif">
@@ -188,53 +189,53 @@ img {
 
 <script>
 
-document.querySelector("#spoiler-button").addEventListener("click", (e) => {
+document.querySelector("#spoiler-Blau").addEventListener("click", (e) => {
   const spoilerContent = document.querySelector("#spoiler-content");
-  spoilerContent.classList.contains("Blau")
-    ? spoilerContent.classList.replace("Blau", "fadein")
-    : spoilerContent.classList.replace("fadein", "Blau");
+  spoilerContent.classList.contains("hidden")
+    ? spoilerContent.classList.replace("hidden", "fadein")
+    : spoilerContent.classList.replace("fadein", "hidden");
 });
 
-document.querySelector("#spoiler-button").addEventListener("click", (e) => {
+document.querySelector("#spoiler-Gel").addEventListener("click", (e) => {
   const spoilerContent = document.querySelector("#spoiler-content");
-  spoilerContent.classList.contains("Gelb")
-    ? spoilerContent.classList.replace("Gelb", "fadein")
-    : spoilerContent.classList.replace("fadein", "Gelb");
+  spoilerContent.classList.contains("hidden")
+    ? spoilerContent.classList.replace("hidden", "fadein")
+    : spoilerContent.classList.replace("fadein", "hidden");
 });
 
-document.querySelector("#spoiler-button").addEventListener("click", (e) => {
+document.querySelector("#spoiler-Gruen").addEventListener("click", (e) => {
   const spoilerContent = document.querySelector("#spoiler-content");
-  spoilerContent.classList.contains("Orange")
-    ? spoilerContent.classList.replace("Orange", "fadein")
-    : spoilerContent.classList.replace("fadein", "Orange");
+  spoilerContent.classList.contains("hidden")
+    ? spoilerContent.classList.replace("hidden", "fadein")
+    : spoilerContent.classList.replace("fadein", "hidden");
 });
 
-document.querySelector("#spoiler-button").addEventListener("click", (e) => {
+document.querySelector("#spoiler-Lila").addEventListener("click", (e) => {
   const spoilerContent = document.querySelector("#spoiler-content");
-  spoilerContent.classList.contains("Rot")
-    ? spoilerContent.classList.replace("Rot", "fadein")
-    : spoilerContent.classList.replace("fadein", "Rot");
+  spoilerContent.classList.contains("hidden")
+    ? spoilerContent.classList.replace("hidden", "fadein")
+    : spoilerContent.classList.replace("fadein", "hidden");
 });
 
-document.querySelector("#spoiler-button").addEventListener("click", (e) => {
+document.querySelector("#spoiler-Orange").addEventListener("click", (e) => {
   const spoilerContent = document.querySelector("#spoiler-content");
-  spoilerContent.classList.contains("Weisz")
-    ? spoilerContent.classList.replace("Weisz", "fadein")
-    : spoilerContent.classList.replace("fadein", "Weisz");
+  spoilerContent.classList.contains(hidden)
+    ? spoilerContent.classList.replace("hidden", "fadein")
+    : spoilerContent.classList.replace("fadein", "hidden");
 });
 
-document.querySelector("#spoiler-button").addEventListener("click", (e) => {
+document.querySelector("#spoiler-Rot").addEventListener("click", (e) => {
   const spoilerContent = document.querySelector("#spoiler-content");
-  spoilerContent.classList.contains("Lila")
-    ? spoilerContent.classList.replace("Lila", "fadein")
-    : spoilerContent.classList.replace("fadein", "Lila");
+  spoilerContent.classList.contains("hidden")
+    ? spoilerContent.classList.replace("hidden", "fadein")
+    : spoilerContent.classList.replace("fadein", "hidden");
 });
 
-document.querySelector("#spoiler-button").addEventListener("click", (e) => {
+document.querySelector("#spoiler-Weisz").addEventListener("click", (e) => {
   const spoilerContent = document.querySelector("#spoiler-content");
-  spoilerContent.classList.contains("Gruen")
-    ? spoilerContent.classList.replace("Gruen", "fadein")
-    : spoilerContent.classList.replace("fadein", "Gruen");
+  spoilerContent.classList.contains("hidden")
+    ? spoilerContent.classList.replace("hidden", "fadein")
+    : spoilerContent.classList.replace("fadein", "hidden");
 });
 
 </script>

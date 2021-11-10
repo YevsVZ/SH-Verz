@@ -3,7 +3,53 @@
 <head>
   <title>Verzauberungen</title>
 </head>
+<style>
 
+
+p {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+  color: Black;
+  margin: 20px 0;
+  letter-spacing: 0.03em;
+}
+
+img {
+  margin: 10px;
+}
+
+#spoiler-button {
+  font-size: 20px;
+  width: 175px;
+  height: 55px;
+  margin: 0 10px;
+  color: white;
+  background: lightslategrey;
+  border-radius: 5px;
+  border: none;
+  letter-spacing: 0.014em;
+}
+
+#spoiler-button:hover {
+  background: #ff0f0f;
+  cursor: pointer;
+}
+
+#spoiler-content {
+  transition: opacity 0.75s ease-in-out;
+}
+
+.hidden {
+  height: 0;
+  opacity: 0;
+}
+
+.fadein {
+  height: 100%;
+  opacity: 1;
+}
+
+</style>
 <body>
 
 <button name="spoiler-button" id="spoiler-button" type="button">Blau</button>
